@@ -27,14 +27,14 @@ Normalmente, bastará con indicar el parámetro de IP ya que, por defecto, el
 usuario y contraseña es root:debian. El parámetro de RSA está en caso de 
 necesitarla para módulos de carretera.
 
-## PCAPsimulator
+## PCAPsimulator.py
 
 String utilizado para simular PCAPs desde un módulo y que se reciban en otro 
 como si fueran lanzados realmente. Para lanzarlo:
 
 `sudo python3 PCAPsimulator.py <ruta del PCAP> <interfaz de red>`
 
-## coordinatesParser
+## coordinatesParser.py
 
 Script utilizado para parsear las coordenadas de un PCAP y generar un CSV con ellas. Está en un estado muy primario,
 debe mejorarse para recibir el chorro de bytes de cada paquete y decodificar cada parámetro. De esta forma, no solo
