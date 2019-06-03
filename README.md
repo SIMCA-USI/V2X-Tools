@@ -2,7 +2,7 @@
 Conjunto de herramientas útiles relacionadas con los módulos, como el script de 
 instalación o el simulador de PCAPs.
 
-**installation.py
+## installation.py
 Script utilizado para instalar la iso base en un módulo. Para lanzarlo:
 
 `sudo python3 installation.py -i <ruta de la iso> -o <ruta donde está montada la CF> -id <id del módulo>`
@@ -14,7 +14,7 @@ proceso de instalación aparezca algún problema con una ruta temporal del siste
 Suele ocurrir si se ha realizado el proceso de instalación en varias tarjetas una 
 detrás de otra. Para solucionarlo, es conveniente reiniciar el ordenador.
 
-**diagnostic.py
+## diagnostic.py
 
 Script utilizado para comprobar el estado de un módulo, borrando automáticamente
 logs antiguos, poniendo la fecha correcta en caso de que se haya desconfigurado
@@ -27,14 +27,14 @@ Normalmente, bastará con indicar el parámetro de IP ya que, por defecto, el
 usuario y contraseña es root:debian. El parámetro de RSA está en caso de 
 necesitarla para módulos de carretera.
 
-**PCAPsimulator
+## PCAPsimulator
 
 String utilizado para simular PCAPs desde un módulo y que se reciban en otro 
 como si fueran lanzados realmente. Para lanzarlo:
 
 `sudo python3 PCAPsimulator.py <ruta del PCAP> <interfaz de red>`
 
-**coordinatesParser
+## coordinatesParser
 
 Script utilizado para parsear las coordenadas de un PCAP y generar un CSV con ellas. Está en un estado muy primario,
 debe mejorarse para recibir el chorro de bytes de cada paquete y decodificar cada parámetro. De esta forma, no solo
